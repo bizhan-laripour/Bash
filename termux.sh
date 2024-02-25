@@ -1,5 +1,4 @@
 #!/bin/bash
-clear
 string="hello , world , how , are , you , ?"
 translation="salam,chetori"
 IFS=','
@@ -10,10 +9,18 @@ figlet "$val"
 sleep 3
 done
 
-echo do you want translation? (y/n)
+echo "do you want translation? (y/n)"
+read confirm
+if [ $confirm == y ];then
+
 IFS=',' read -ra trans <<< "$translation"
-for tr in "${trans[@]}"; 
+for tr in "${trans[@]}";
 do
 figlet "$tr"
 sleep 3
 done
+fi
+
+if [ $confirm == n ];then
+figlet "nothing"
+fi
