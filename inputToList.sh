@@ -19,8 +19,8 @@ sportArray+=("$input")
 fi
 flag="false"
 done
-
-echo "${#sportArray[@]}"
+clear                                                   echo "number of sports in the Array is :"{#sportArray[@]}""
+echo "sports are:"
 for val in "${sportArray[@]}";
 do
         echo -e "$val \n"
