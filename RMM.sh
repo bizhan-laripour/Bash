@@ -24,6 +24,6 @@ exist+=(RMM_WORKER)
 fi
 for ((i=0;i<"${#exist[@]}"; i++));do
 number=$(($i +1 ))
- echo $number : "${exist[$i]}" exist           
+echo $number : "${exist[$i]}" exist           
 done
                     
