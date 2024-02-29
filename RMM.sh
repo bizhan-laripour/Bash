@@ -22,8 +22,19 @@ fi
 if test -d ./RMM_WORKER;then                          
 exist+=(RMM_WORKER)    
 fi
-for ((i=0;i<"${#exist[@]}"; i++));do
-number=$(($i +1 ))
-echo $number : "${exist[$i]}" exist           
+for ((i=0;i<"${#exist[@]}"; i++));do                            
+number=$(( $i + 1 ))                            
+echo $number : "${exist[$i]}" exist                   
 done
-                    
+echo "which module do you want to replace from git? just enter number of module with comma seperate:"
+read -r modules
+IFS=',' read -ra array <<< "$modules"                                               
+for val in "${array[@]}";do
+for ((i=0; i<${#exist[@]};i++));do
+if [ $val == $(( $i + 1 )) ];then
+echo "${exist[$i]}"
+fi                    
+done           
+done
+
+    
