@@ -23,6 +23,7 @@ if test -d ./RMM_WORKER;then
 exist+=(RMM_WORKER)    
 fi
 for ((i=0;i<"${#exist[@]}"; i++));do
- echo "$i+1" : "${exist[$i]}" exist           
+number=$(($i +1 ))
+ echo $number : "${exist[$i]}" exist           
 done
                     
