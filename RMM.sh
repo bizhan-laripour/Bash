@@ -16,24 +16,42 @@ RMM_WORKER
 RMM_AGENT      
 )
 declare -a exist=()    
-for val in "${all[@]}";do       
-if test -d ./$val;then         
-exist+=($val)              
-fi                         
+for val in "${all[@]}";do
+if test -d ./$val;then
+        exist+=($val)    
+        fi
 done
-for ((i=0;i<"${#exist[@]}"; i++));do  
-number=$(( $i + 1 ))    
-echo $number : "${exist[$i]}" exist   
+
+for del in "${exist[@]}";do   
+all=( "${all[@]/$del}" )
+done                                                                                                           
+for vals in "${all[@]}";do                                    
+if [ "$vals" !=  "" ]; then
+git clone https://github.com/bizhan-laripour/$vals.git                                                   
+fi                                                   
+done                                                    
+for ((i=0;i<"${#exist[@]}"; i++));do
+        number=$(( $i + 1 ))
+ echo $number : "${exist[$i]}" exist
 done
-echo "which module do you want to replace from git? just enter number of module with comma seperate:"
+echo "which module do you want to replace from git? just
+ enter number of module with comma seperate:"
 read -r modules
-IFS=',' read -ra array <<< "$modules"                                               
+
+IFS=',' read -ra array <<< "$modules"
+
 for val in "${array[@]}";do
+
 for ((i=0; i<${#exist[@]};i++));do
+
 if [ $val == $(( $i + 1 )) ];then
-echo "${exist[$i]}"
-fi                    
-done           
+rm -rf ${exist[$i]}
+git clone https://github.com/bizhan-laripour/${exist[$i]
+}.git
+
+#echo "${exist[$i]}"
+fi
+done
 done
 
     
