@@ -44,7 +44,7 @@ jDirection=5
 
   }
   
-while [ true ]; do
+while  true;do
   display
   read -sn1 dir
   direction=$dir
