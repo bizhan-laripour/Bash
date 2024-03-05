@@ -3,4 +3,4 @@ in my roadmap prospect there is an enterprise project with shell
 
 # Snake
 
-Snake is a bash file that creates the snake game. in this point
+Snake is a bash file that creates the snake game. in this point i dont handle game over .
