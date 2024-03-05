@@ -43,11 +43,20 @@ jDirection=5
             sleep 0.9
   }
 
+  function random_apple {
+
+          iappleDirection=$((1 + $RANDOM % 19))
+          jappleDirection=$((1 + $RANDOM % 29))
+
+
+  }
+
   function colided {
 
           if [[ "$idirection" -eq "$iappleDirection" && "$jDirection" -eq "$jappleDirection" ]];then
                 worm=$worm$apple
                 score=$(( $score+1 ))
+                random_apple
           fi
 
   }
@@ -61,7 +70,7 @@ while  true;do
   fi
   change_direction
   colided
-
+   
 done
 
 
