@@ -45,9 +45,9 @@ jDirection=5
 
   function colided {
 
-          if [[ "$idirection" == "$iappleDirection" && "$jDirection" == "$jappleDirection" ]];then
+          if [[ "$idirection" -eq "$iappleDirection" && "$jDirection" -eq "$jappleDirection" ]];then
                 worm=$worm$apple
-                score="$score"+1
+                score=$(( $score+1 ))
           fi
 
   }
@@ -63,6 +63,7 @@ while  true;do
   colided
 
 done
+
 
 
 
