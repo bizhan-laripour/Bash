@@ -39,17 +39,21 @@ jDirection=5
               idirection=$idirection+1
             elif [ $direction == d ]; then
                 jDirection=$jDirection+1
-            sleep 0.1
             fi
-
+            sleep 0.9
   }
-  
+
 while  true;do
   display
-  read -sn1 dir
-  direction=$dir
+  read -t 0.1  -sn1 dir
+  if [[ "$dir" == w || "$dir" == a || "$dir" == s || "$dir" == d ]];then
+         direction=$dir
+
+  fi
   change_direction
+
 done
+
 
 
 
