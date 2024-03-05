@@ -43,6 +43,15 @@ jDirection=5
             sleep 0.9
   }
 
+  function colided {
+
+          if [[ "$idirection" == "$iappleDirection" && "$jDirection" == "$jappleDirection" ]];then
+                worm=$worm$apple
+                score="$score"+1
+          fi
+
+  }
+
 while  true;do
   display
   read -t 0.1  -sn1 dir
@@ -51,8 +60,10 @@ while  true;do
 
   fi
   change_direction
+  colided
 
 done
+
 
 
 
