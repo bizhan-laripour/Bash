@@ -1,9 +1,12 @@
 #!/bin/bash
 
 worm="##"
-apple="@"                                               direction=d
+apple="@"                                            
+direction=d
 idirection=5
-jDirection=5                                            iappleDirection=10                                      jappleDirection=10
+jDirection=5                                         
+iappleDirection=10                                    
+jappleDirection=10
 gameOver=false
 
 function display {
@@ -61,6 +64,7 @@ function game_over {
           echo "final score is $score"
           gameOver=true                                 
   fi
+  }
 
 while  true;do
         if [ $gameOver == false ];then
