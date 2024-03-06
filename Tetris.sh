@@ -36,7 +36,7 @@ fi
 done
 }
 function getShape {                                     
-        if [[ "$iscolided" ==  "true" || "$iscolided" =="" ]];then
+        if [[ "$iscolided" ==  "true" || "$iscolided" == "" ]];then
         sh=${shapes[$RANDOM % ${#shapes[*]}]}                  
         #printf '%s\n' $shape                                   
         shape=$sh
