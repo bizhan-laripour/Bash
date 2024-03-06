@@ -7,3 +7,10 @@ Snake is a bash file that creates the snake game.
 after eating the apple you get score and if you colide to the wall the game will be over. 
 ### its just a warm up in bash!
 take it easy dude 😒🖐️
+
+# Tetris
+
+tetris game created by bash but its not complete
+
+### its just a warm up in bash too!
+take it easy bro 🤨🖐️
