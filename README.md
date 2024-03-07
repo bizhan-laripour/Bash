@@ -14,3 +14,6 @@ tetris game created by bash but its not complete
 
 ### its just a warm up in bash too!
 take it easy bro 🤨🖐️
+
+# Atari River
+is the next game that i want to create
