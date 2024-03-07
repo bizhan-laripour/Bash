@@ -40,3 +40,45 @@ fi
 done
 
 }
+
+function enemy {
+        if [[  $time -eq 0 ]];then
+        sh=${shapes[$RANDOM % ${#shapes[*]}]}
+        shape=$sh
+        iEnemy=0
+        random
+        fi
+}
+
+function random {
+        jEnemy=$((5 + $RANDOM % 44))
+
+}
+
+function enemy_direction {
+
+        iEnemy=$(($iEnemy + 1 ))                     
+        }
+
+function plain_change_direction {                       
+        if [ $input == w ];then
+                iPlainDirection=$(($iPlainDirection - 1))                                                          
+                elif [ $input == s ];then                                   
+                iPlainDirection=$(($iPlainDirection + 1))
+        elif [ $input == a ];then                                    
+        jPlainDirection=$(($jPlainDirection - 1))
+        elif [ $input == d ];then
+                jPlainDirection=$(($jPlainDirection + 1))
+        fi
+}
+while true;do
+display
+enemy                                                
+read -t 0.1  -sn1 dir                                  
+if [[ $dir == a || $dir == s || $dir == d || $dir == w ]];then
+        input=$dir
+        plain_change_direction                         
+        fi
+sleep 1
+time=$(( $time + 1 ))                                                                                       
+enemy_direction
