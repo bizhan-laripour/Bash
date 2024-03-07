@@ -79,6 +79,7 @@ if [[ $dir == a || $dir == s || $dir == d || $dir == w ]];then
         input=$dir
         plain_change_direction                         
         fi
-sleep 1
+sleep 0.2
 time=$(( $time + 1 ))                                                                                       
 enemy_direction
+done
