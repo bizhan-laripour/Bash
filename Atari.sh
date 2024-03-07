@@ -3,8 +3,13 @@
                                                                                                              
 declare -a shapes=(                                                                                        
  "@@"
-)   
-airplain="<∆>"
+ "¥^¥"
+ "€&€"
+ "¶∆¶"
+)  
+tir="¥"
+exploid="##"
+airplain="<[∆]>"
 function display {
         clear
 
