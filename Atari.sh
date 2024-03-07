@@ -1,21 +1,10 @@
 #!/bin/bash
                                                                                                               
                                                                                                              
-declare -a shapes=(                                    
-"@@@@"
-"@@@                                                     
- @@@
- "
- "@@@                                                     
-  @
-  "                                                       
-  "@@@@
-   @"
-  "@
-   @                                                     
-   @                                                     
-   @"
-)                                                                                                               
+declare -a shapes=(                                                                                        
+ "@@"
+)   
+airplain="<∆>"
 function display {
         clear
 
