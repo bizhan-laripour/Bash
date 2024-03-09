@@ -86,8 +86,7 @@ while true;do
 display
 enemy
 read -t 0.1  -sn1 dir                                   
-if [[ $dir == a || $dir == s || $dir == d || $dir == w ]
-];then
+if [[ $dir == a || $dir == s || $dir == d || $dir == w ]];then
         input=$dir
         plain_change_direction
 elif [[ $dir == l ]];then
