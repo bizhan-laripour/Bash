@@ -72,14 +72,11 @@ function plain_change_direction {
         if [ $input == w ];then
                 iPlainDirection=$(($iPlainDirection - 1))
         elif [ $input == s ];then
-                iPlainDirection=$(($iPlainDirection + 1)
-)
+                iPlainDirection=$(($iPlainDirection + 1))
         elif [ $input == a ];then
-                jPlainDirection=$(($jPlainDirection - 1)
-)
+                jPlainDirection=$(($jPlainDirection - 1))
         elif [ $input == d ];then                                       
-        jPlainDirection=$(($jPlainDirection + 1)
-)
+               jPlainDirection=$(($jPlainDirection + 1))
         fi
 }
 while true;do
