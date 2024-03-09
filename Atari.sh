@@ -64,3 +64,33 @@ function enemy_direction {
 
         iEnemy=$(($iEnemy + 1 ))
 }
+function plain_change_direction {                       
+        if [ $input == w ];then
+                iPlainDirection=$(($iPlainDirection - 1))
+        elif [ $input == s ];then
+                iPlainDirection=$(($iPlainDirection + 1)
+)
+        elif [ $input == a ];then
+                jPlainDirection=$(($jPlainDirection - 1)
+)
+        elif [ $input == d ];then                                       jPlainDirection=$(($jPlainDirection + 1)
+)
+        fi
+}
+while true;do
+display
+enemy
+read -t 0.1  -sn1 dir                                   if [[ $dir == a || $dir == s || $dir == d || $dir == w ]
+];then
+        input=$dir
+        plain_change_direction
+                                                        elif [[ $dir == l ]];then
+        throw
+fi
+sleep 0.2
+time=$(( $time + 1 ))
+check_time
+
+enemy_direction
+
+done
