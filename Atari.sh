@@ -35,3 +35,32 @@ fi
 done
 
 }
+
+function enemy {                                                if [[ $time -eq 25 || $time -eq 0 ]];then
+        sh=${shapes[$RANDOM % ${#shapes[*]}]}
+        shape=$sh                                               iEnemy=0
+        random
+        fi
+}                                                       
+function random {
+        jEnemy=$((5 + $RANDOM % 44))
+
+}
+
+function check_time {
+                                                                if [ $time -eq 25 ];then
+                time=0
+        fi
+}
+
+function throw {
+colon=","
+t=$iPlainDirection$colon$jPlainDirection
+tirlist+=($t)
+
+}
+
+function enemy_direction {
+
+        iEnemy=$(($iEnemy + 1 ))
+}
