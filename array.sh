@@ -1,4 +1,4 @@
-#!/bin/usr/env bash
+#!/bin/bash
 
 declare -a myArray=(
 [0]=bizhan
