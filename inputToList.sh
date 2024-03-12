@@ -1,3 +1,4 @@
+#!/bin/bash
 declare -a sportArray
 flag="false"
 for ((i=0 ; i<10; i++));do
