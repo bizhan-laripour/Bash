@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# snake game but not complete
 worm="##"
 apple="@"                                            
 direction=d
