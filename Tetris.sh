@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# tetris game but not completed
 
 declare -a shapes=(
 "@@@@@"
