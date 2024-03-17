@@ -1,4 +1,5 @@
 #!/bin/bash
+# this is a test for arrays
 string="hello , world , how , are , you , ?"
 translation="salam,chetori"
 IFS=','
