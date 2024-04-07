@@ -8,7 +8,6 @@ after eating the apple you get score and if you colide to the wall the game will
 take it easy dude 😒🖐️
 
 # Tetris
-
 tetris game created by bash but its not complete
 
 ### its just a warm up in bash too!
