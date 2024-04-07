@@ -15,6 +15,5 @@ tetris game created by bash but its not complete
 take it easy bro 🤨🖐️
 
 # Atari River
-
 is the next game that i want to create.
 This game contains an Airplain that must kill the enemies to survive
