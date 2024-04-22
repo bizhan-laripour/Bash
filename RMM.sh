@@ -15,6 +15,7 @@ RMM_CONFIG_SERVER
 RMM_WORKER      
 RMM_AGENT      
 )
+
 declare -a exist=()    
 for val in "${all[@]}";do
 if test -d ./$val;then
