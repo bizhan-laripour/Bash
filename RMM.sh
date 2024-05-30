@@ -1,4 +1,5 @@
 #!/bin/bash
+
 bold=$(tput bold)  
 normal=$(tput sgr0)   
 NONE='\033[00m'  
