@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # this is atari game
 declare -a shapes=(                                     
  "@@"
